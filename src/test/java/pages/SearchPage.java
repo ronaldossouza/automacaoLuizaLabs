@@ -22,12 +22,10 @@ public class SearchPage extends BasePage{
         driver.findElement(By.id("btnHeaderSearch")).click();
         driver.findElement(By.cssSelector(".content-search")).click();
         driver.findElement(By.id("inpHeaderSearch")).click();
-        // return this;
     }
     public void pesquisaProduto(String pesquisa) {
         driver.findElement(By.id("inpHeaderSearch")).sendKeys(pesquisa);
         driver.findElement(By.id("btnHeaderSearch")).click();
-        // return this;
     }
     public void selecionaProduto() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -40,15 +38,12 @@ public class SearchPage extends BasePage{
         }else {
             System.out.println("Item não encontrado!");
         }
-        //return this;
     }
     public void addProdutoNaSacola() {
         driver.findElement(By.cssSelector(".button__buy-product-detail > .button__icon")).click();
-        //return this;
     }
     public void  voltaParaPaginaInicial() {
         driver.findElement(By.xpath(cliqueVoltarParaHome)).click();
-        //return this;
     }
     public String validaSetemItensNaSacola() throws InterruptedException {
 
