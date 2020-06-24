@@ -31,9 +31,8 @@ public class InformacoesPageObjectsTest {
         Integer itemCount = Integer.parseInt(itemsBag.split(" ")[0]);
         Assert.assertEquals(1L, itemCount.longValue());
 
-        searchPage.comparaItem();
-        String  comparaItem2 = String.format("iPhone 11 Pro Apple 64GB Cinza Espacial 4G - Tela 5,8” Retina Câmera Tripla 12MP + Selfie 12MP ") ;
-        Assert.assertEquals("iPhone 11 Pro Apple 64GB Cinza Espacial 4G - Tela 5,8” Retina Câmera Tripla 12MP + Selfie 12MP ", comparaItem2);
+
+        Assert.assertEquals("iPhone 11 Pro Apple 64GB Cinza Espacial 4G - Tela 5,8” Retina Câmera Tripla 12MP + Selfie 12MP", searchPage.comparaItem());
 
         //Tira screenshot da tela da sacola
         String screenshotArquivo = "C:\\Users\\ronaldo.silva\\Pictures\\Evidencias"
